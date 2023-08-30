@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radu sir Competition</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <video 
+  id="myVideo"
+  src="footage.mp4"
+  controls
+></video>
+<div id="canvas-wrap">
+    <canvas id="myCanvas"></canvas>
+    <div id="overlay">
+        <h3>Choose the color</h3>
+        <div >
+            <div class="column">
+        <div onclick="Red()" class="circle red"></div>protanopia</div> 
+        <div class="column"><div onclick="Green()" class="circle green"></div>deuteranopia</div>
+        <div class="column"> <div onclick="Blue()" class="circle blue"></div>tritanopia</div>
+        </div>
+    </div>
+  </div>
+
+
+  <script>
+    var red = 0;
+    var blue=0;
+    var green=255;
+    function Red(){
+    var red = 255;
+    var blue=0;
+    var green=0;
+    console.log(red)
+    }
+    function Green(){
+    var red = 0;
+    var blue=0;
+    var green=255;
+    console.log(green)
+    }
+    function Blue(){
+    var red = 0;
+    var green=0;
+    var blue=255;
+    console.log(blue)
+    }
+
+
+
+  </script>
+
+    <script src="effect.js" crossOrigin="anonymous"></script>
+    <script src="utils.js"></script>
+    <script src="TrackingBall.js"></script>
+
+</body>
+</html>

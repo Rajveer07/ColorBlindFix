@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas-wrap { position:relative } 
+#overlay     { position:absolute; top:20px; left:30px;
+                width:140px;
+                height: 150px;
+                opacity: 0.8;
+                background-color: rgb(255, 255, 233);
+               
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: 2px;
+    
+}
+
+.column{
+    display: flex;
+    text-align: center;
+    
+}
+
+.red{
+    background-color: rgb(255,0,0);
+
+}
+.red:hover{
+    cursor:pointer;
+}
+.green{
+    background-color: rgb(0,255,0);
+}
+.green:hover{
+    cursor:pointer;
+}
+.blue{
+    background-color: rgb(0,0,255);
+}
+.blue:hover{
+    cursor:pointer;
+}
